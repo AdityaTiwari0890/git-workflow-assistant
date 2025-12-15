@@ -1,0 +1,78 @@
+{
+  "name": "git-workflow-assistant",
+  "displayName": "Git Workflow Assistant",
+  "description": "One-click Git commands inside VS Code",
+  "version": "0.0.1",
+  "publisher": "aditya",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdityaTiwari0890/git-workflow-assistant"
+  },
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "SCM"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:gitAssistant.status",
+    "onCommand:gitAssistant.add",
+    "onCommand:gitAssistant.commit",
+    "onCommand:gitAssistant.push",
+    "onCommand:gitAssistant.pull",
+    "onCommand:gitAssistant.fetch",
+    "onCommand:gitAssistant.checkout",
+    "onCommand:gitAssistant.listBranches",
+    "onCommand:gitAssistant.log",
+    "onCommand:gitAssistant.stash",
+    "onCommand:gitAssistant.reset",
+    "onCommand:gitAssistant.merge",
+    "onCommand:gitAssistant.addRemote",
+    "onCommand:gitAssistant.removeRemote",
+    "onCommand:gitAssistant.setRemoteUrl",
+    "onCommand:gitAssistant.listRemote",
+    "onCommand:gitAssistant.pushUpstream",
+    "onCommand:gitAssistant.fetchAll"
+  ],
+  "contributes": {
+    "commands": [
+      { "command": "gitAssistant.status", "title": "Git Assistant: Status" },
+      { "command": "gitAssistant.add", "title": "Git Assistant: Add All" },
+      { "command": "gitAssistant.commit", "title": "Git Assistant: Commit" },
+      { "command": "gitAssistant.push", "title": "Git Assistant: Push" },
+      { "command": "gitAssistant.pull", "title": "Git Assistant: Pull" },
+      { "command": "gitAssistant.fetch", "title": "Git Assistant: Fetch" },
+      { "command": "gitAssistant.checkout", "title": "Git Assistant: Checkout Branch" },
+      { "command": "gitAssistant.listBranches", "title": "Git Assistant: List Branches" },
+      { "command": "gitAssistant.log", "title": "Git Assistant: Log" },
+      { "command": "gitAssistant.stash", "title": "Git Assistant: Stash" },
+      { "command": "gitAssistant.reset", "title": "Git Assistant: Reset" },
+      { "command": "gitAssistant.merge", "title": "Git Assistant: Merge Branch" },
+      { "command": "gitAssistant.addRemote", "title": "Git Assistant: Add Remote" },
+      { "command": "gitAssistant.removeRemote", "title": "Git Assistant: Remove Remote" },
+      { "command": "gitAssistant.setRemoteUrl", "title": "Git Assistant: Set Remote URL" },
+      { "command": "gitAssistant.listRemote", "title": "Git Assistant: List Remotes" },
+      { "command": "gitAssistant.pushUpstream", "title": "Git Assistant: Push Upstream" },
+      { "command": "gitAssistant.fetchAll", "title": "Git Assistant: Fetch All Remotes" }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.48.1",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
