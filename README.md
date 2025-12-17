@@ -1,93 +1,144 @@
-# Git Workflow Assistant
+🚀 Git Workflow Assistant
 
-**Git Workflow Assistant** is a VS Code extension that allows you to run common Git commands with **one click** directly inside the editor. Perfect for beginners and developers who want to streamline their Git workflow without leaving VS Code.
+Git Workflow Assistant is a powerful VS Code extension that helps developers execute common and advanced Git commands with one click, directly inside Visual Studio Code.
+It also provides Git Tree Views for branches, file status, and commit logs — making Git easier, faster, and more visual.
 
----
+This extension is ideal for students, beginners, and professionals who want to simplify their Git workflow without using the terminal manually.
 
-## Features
+✨ Features
+🔹 One-Click Git Commands
 
-- One-click execution of common Git commands:
-  - `git status`
-  - `git add .`
-  - `git commit -m "message"`
-  - `git push`
-  - `git pull`
-  - `git fetch`
-  - `git checkout`
-  - `git log`
-  - `git stash`
-  - `git reset`
-  - `git merge`
-  - `git remote add origin`
-- Opens an integrated terminal automatically for Git commands.
-- Prompts for commit messages using a popup input box.
-- Easy to use, no complex setup required.
+Run frequently used Git commands directly from the Command Palette:
 
-<!-- ![feature-example](images/feature-x.png) -->
+git status
 
-> Tip: You can add short GIFs showing commands in action to make it more interactive.
+git add .
 
----
+git commit
 
-## Requirements
+git push
 
-- VS Code
-- Node.js installed
-- Git installed and configured
+git pull
 
----
+git fetch
 
-## Extension Settings
+git checkout
 
-This extension does **not require additional configuration**. Simply install and start using.
+git branch
 
----
+git log
 
-## Known Issues
+git stash
 
-- Ensure your workspace is initialized as a Git repository, otherwise some commands (like `push` or `commit`) will fail.
-- The extension currently does not handle merge conflicts automatically.
+git reset
 
----
+git merge
 
-## Release Notes
+git remote add / remove / set-url
 
-### 1.0.0
+git push --set-upstream
 
-- Initial release of Git Workflow Assistant with essential Git commands.
+git fetch --all
 
----
+🌳 Git Tree Views (Sidebar)
 
-## Author / Contact
+Visual Git information inside the Explorer panel:
 
-**Created by:** Aditya Tiwari  
-**GitHub:** [https://github.com/AdityaTiwari0890](https://github.com/AdityaTiwari0890)  
-**LinkedIn:** [www.linkedin.com/in/adityatiwari089](www.linkedin.com/in/adityatiwari089)
+Git Branches View – List all branches
 
----
-Need Collaborator.
+Git File Status View – See modified/untracked files
 
-## Following Extension Guidelines
+Git Commit Logs View – View commit history
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension:
+⚡ Productivity Features
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+Quick Commit (popup commit message)
 
----
+Auto Pull (stash → pull → pop)
 
-## Working with Markdown
+Clean untracked files
 
-You can author your README using Visual Studio Code. Useful shortcuts:
+Copy repository remote URL
 
-* Split the editor: `Ctrl+\` (Windows/Linux) or `Cmd+\` (macOS)
-* Toggle preview: `Shift+Ctrl+V` (Windows/Linux) or `Shift+Cmd+V` (macOS)
-* Press `Ctrl+Space` to see Markdown snippets
+Integrated terminal opens automatically
 
----
+🧩 How to Use
 
-## More Information
+Install the extension
 
-* [Visual Studio Code Markdown Support](http://code.visualstudio.com/docs/languages/markdown)  
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Open a Git repository in VS Code
 
-**Enjoy using Git Workflow Assistant!**
+Press Ctrl + Shift + P
+
+Search for Git Assistant
+
+Select the command you want to run
+
+OR
+
+Use the Git Tree Views in the VS Code Explorer sidebar.
+
+📦 Requirements
+
+Visual Studio Code
+
+Git installed and configured
+
+Node.js (only for development)
+
+⚙️ Extension Settings
+
+This extension does not require any configuration.
+Just install and start using.
+
+🐞 Known Issues
+
+Some Git commands may fail if the folder is not a Git repository
+
+Merge conflicts must be resolved manually
+
+Large repositories may take time to load logs
+
+📝 Release Notes
+1.0.0
+
+Initial release
+
+One-click Git commands
+
+Git Tree Views
+
+Remote management
+
+Quick commit & automation
+
+👨‍💻 Author
+
+Aditya Tiwari
+
+GitHub: https://github.com/AdityaTiwari0890
+
+LinkedIn: https://www.linkedin.com/in/adityatiwari089
+
+Open to collaboration and contributions.
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to open issues or submit pull requests on GitHub.
+
+📄 License
+
+This project is licensed under the ISC License.
+
+❤️ Support
+
+If you find this extension helpful:
+
+⭐ Star the GitHub repository
+
+Share it with your friends
+
+Provide feedback or suggestions
+
+Enjoy faster and simpler Git workflows with Git Workflow Assistant! 🚀
