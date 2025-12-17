@@ -3,7 +3,7 @@
   "displayName": "Git Workflow Assistant",
   "description": "One-click Git commands, automation, and Git Tree View inside VS Code",
   "version": "0.0.1",
-  "publisher": "aditya",
+  "publisher": "AdityaTiwari0890",
   "repository": {
     "type": "git",
     "url": "https://github.com/AdityaTiwari0890/git-workflow-assistant"
@@ -15,7 +15,31 @@
   "main": "./out/extension.js",
 
   "activationEvents": [
-    "*"
+    "onCommand:gitAssistant.status",
+    "onCommand:gitAssistant.add",
+    "onCommand:gitAssistant.commit",
+    "onCommand:gitAssistant.push",
+    "onCommand:gitAssistant.pull",
+    "onCommand:gitAssistant.fetch",
+    "onCommand:gitAssistant.checkout",
+    "onCommand:gitAssistant.listBranches",
+    "onCommand:gitAssistant.log",
+    "onCommand:gitAssistant.stash",
+    "onCommand:gitAssistant.reset",
+    "onCommand:gitAssistant.merge",
+    "onCommand:gitAssistant.addRemote",
+    "onCommand:gitAssistant.removeRemote",
+    "onCommand:gitAssistant.setRemoteUrl",
+    "onCommand:gitAssistant.listRemote",
+    "onCommand:gitAssistant.pushUpstream",
+    "onCommand:gitAssistant.fetchAll",
+    "onCommand:gitAssistant.quickCommit",
+    "onCommand:gitAssistant.autoPull",
+    "onCommand:gitAssistant.clean",
+    "onCommand:gitAssistant.copyRepoUrl",
+    "onView:gitTreeView",
+    "onView:gitFileTreeView",
+    "onView:gitLogView"
   ],
 
   "contributes": {
@@ -38,7 +62,6 @@
       { "command": "gitAssistant.listRemote", "title": "Git Assistant: List Remotes" },
       { "command": "gitAssistant.pushUpstream", "title": "Git Assistant: Push Upstream" },
       { "command": "gitAssistant.fetchAll", "title": "Git Assistant: Fetch All Remotes" },
-
       { "command": "gitAssistant.quickCommit", "title": "Git Assistant: Quick Commit" },
       { "command": "gitAssistant.autoPull", "title": "Git Assistant: Auto Pull (stash → pull → pop)" },
       { "command": "gitAssistant.clean", "title": "Git Assistant: Clean Untracked Files" },
